@@ -1,2 +1,9 @@
 # EXCEL-ASSIGNMENT-2
 Handling missing values,Correcting Inconsistent data,Removing Duplicates,Splitting and Merging,Number Formatting,Conditional Formatting
+1) Handling Missing Values: missing price value find by meadian function (statistics in power query),and missing categories find by using a syntax and add additional column to solve the null values in it.
+Syntax :if [Category] <> null then [Category]else if [Product Name] = "Backpack" then "Outdoor"else if [Product Name] = "Sneakers"then"Fashion"elseif [Product Name] = "Coffee Maker" then "Kitchen"else if [Product Name] = "Fitness Tracker" then "Electronics"else null
+2) Correcting Inconsistent Data:Product Names inconsistent text format corrected by format function (capitalize),trim,clean(powerQuery)and in categories are corrected by using format function Capitalize function the replace (function)electronic different name to a single name,trim and clean function used to correct the inconsistant data.
+3) Removing Duplicates: using remove rows duplicates and other coulums used by remove function(Power Query)
+4) Splitting and Merging Data:splitting done though split function,product id  convert to two columns like manufacturing date and country code and two colums named brand name and product name merged into one column named product brand using Concat function in excel.=CONCAT(E215," ",C215)
+5) Number Formatting price column to cuurency format by using accounting number format in excel (ribbon).add a year coulmn and conacat day,month,year then use text function and display date in format dd-mm-yyy.=TEXT(F284,"dd-mm-yyyy")
+6) Conditional Formatting:using excel price column showed with data bar using conditional formatting in ribbon then data bars selected approriately.then applied conditonal formatting -highligh cell rules then used equal to function and given the value (electronics) to be highlighted and  give approriate colours .
